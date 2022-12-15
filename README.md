@@ -1,4 +1,4 @@
-<p align="center"><img src="static\logo.png" width="400"></p>
+<p align="center"><img src="static/Logo.png" width="400"></p>
 
 This a e-commerce web application that allows users to search for products stored in database, add them to shopping cart and then make payment using Stripe. App has login system functionality. The guest user is able to browse, search and add product to cart only. Checkout and payment option is available for registerd users.
 
