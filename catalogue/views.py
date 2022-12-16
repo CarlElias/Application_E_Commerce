@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from django.views.generic import ListView, DetailView
+from .models import *
 
-# Create your views here.
-def home(request):
-    return render(request, 'index.html')
+class HomeView(ListView):
+    model = Item
+    template_name = 'index.html'

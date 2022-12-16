@@ -2,11 +2,28 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
+
+CATEGORIE_CHOIX = (
+    ('L', 'Legumes'),
+    ('F', 'Fruits'),
+    ('C', 'Cereales'),
+)
+LABEL_CHOIX = (
+    ('S', 'Secondary'),
+    ('P', 'Primary'),
+    ('D', 'Danger'),
+)
+
+
 class Item(models.Model): #Item du catalogue
     titre = models.CharField(max_length=100)
     prix = models.FloatField()
     prix_reduit = models.IntegerField(blank=True, null=True)
     slug = models.SlugField()
+    categorie = models.CharField(choices=CATEGORIE_CHOIX, max_length=1)
+    label = models.CharField(choices=LABEL_CHOIX, max_length=1)
+    description = models.TextField()
+    image = models.ImageField(default='tt.png', upload_to='')
     def __str__(self):
         return self.titre
 
