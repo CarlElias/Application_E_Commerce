@@ -37,6 +37,8 @@
       <link rel="stylesoeet" href={% static "css/owl.theme.default.min.css"  %}>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
    </head>
+
+
    <body>
       <!-- banner bg main start -->
       <div class="banner_bg_main">
@@ -174,10 +176,70 @@
          <!-- banner section end -->
       </div>
       <!-- banner bg main end -->
-
-
-
+      
+      
       {% block Semence %}{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div align="center">
+    
+    </div>
+
+
+
+
+    <div class="container">
+        <h1 class="fashion_taital">A PROPOS DE KIVUGREEN</h1>
+        <div class="fashion_section_2">
+           <div class="row">
+                <div class="col-md-16">
+                    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <p>KivuGreen est une plateforme web-mobile et SMS-USSD qui connecte tous les acteurs du monde agricole aux marchés et aux informations agricoles (info sur le prix, la météo agricoles et les conseils sur les itinéraires techniques agricoles face au changement climatique pour une agriculture durable et rentable).</p>
+                            <p>Cette plateforme permet aux petits producteurs d’écouler leurs produits en les connectant directement aux acheteurs. KivuGreen contourne donc une foule d’intermédiaires sans valeur ajoutée dans la chaine d’approvisionnement depuis les producteurs jusqu’aux acheteurs, De plus, cette plateforme les aide à obtenir les informations quant à la saison telles que les conditions météorologiques, le prix sur les autres marchés, des conseils agricoles et leur fournit des compétences (par exemple, comment planter des cultures, de quelle manière utiliser les engrais).</p>
+                            <p>Cette solution propose aux coopératives ou groupement soit entrepôt des petits producteurs une place sur le marchés virtuel « un market place e-commerce »</p>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -185,7 +247,7 @@
       <!-- footer section start -->
       <div class="footer_section layout_padding">
          <div class="container">
-            <div class="footer_logo"><a href="index.html"><img src={% static "images/footer-logo.png" %}></a></div>
+            <div class="footer_logo"><a href=""><img src={% static "images/footer-logo.png" %}></a></div>
             <div class="input_bt">
                <input type="text" class="mail_bt" placeholder="Your Email" name="Your Email">
                <span class="subscribe_bt" id="basic-addon2"><a href="#">Subscribe</a></span>
@@ -203,6 +265,9 @@
          </div>
       </div>
       <!-- footer section end -->
+
+
+      
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">

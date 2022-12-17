@@ -1,0 +1,98 @@
+{% extends  'master.html' %}
+
+{% block Semence %}
+{% load static %}
+   <!-- electronic section start -->
+   <div class="fashion_section">
+      <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="container">
+                  <h1 class="fashion_taital">Semence</h1>
+                  <div class="fashion_section_2">
+                     <div class="row">
+
+                        {% for object in object_list %}
+
+                        <div class="col-lg-4 col-sm-4">
+                           <div class="box_main">
+                              <h4 class="shirt_text">{{object.titre}}</h4>
+                              <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>
+                              <div class="electronic_img"><img style="width: 90%;" src={{object.image.url}}></div>
+                              <div class="btn_main">
+                                 <div class="buy_bt"><a href="#">Ajouter au panier</a></div>
+                                 <div class="seemore_bt"><a href="#">Apercu rapide</a></div>
+                              </div>
+                           </div>
+                        </div>
+
+                        {% endfor %}
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <h1 class="fashion_taital">Semence</h1>
+                  <div class="fashion_section_2">
+                     <div class="row">
+
+                        {% for object in object_list %}
+
+                        <div class="col-lg-4 col-sm-4">
+                           <div class="box_main">
+                              <h4 class="shirt_text">{{object.titre}}</h4>
+                              <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>
+                              <div class="electronic_img"><img style="width: 90%;" src={% static "images/tt.png" %}></div>
+                              <div class="btn_main">
+                                 <div class="buy_bt"><a href="#">Ajouter au panier</a></div>
+                                 <div class="seemore_bt"><a href="#">Apercu rapide</a></div>
+                              </div>
+                           </div>
+                        </div>
+
+                        {% endfor %}
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <h1 class="fashion_taital">Semence</h1>
+                  <div class="fashion_section_2">
+                     <div class="row">
+
+                        {% for object in object_list %}
+
+                        <div class="col-lg-4 col-sm-4">
+                           <div class="box_main">
+                              <h4 class="shirt_text">{{object.titre}}</h4>
+                              <p class="price_text">Start Price  <span style="color: #262626;">$ 100</span></p>
+                              <div class="electronic_img"><img style="width: 90%;" src={% static "images/tt.png" %}></div>
+                              <div class="btn_main">
+                                 <div class="buy_bt"><a href="#">Ajouter au panier</a></div>
+                                 <div class="seemore_bt"><a href="#">Apercu rapide</a></div>
+                              </div>
+                           </div>
+                        </div>
+
+                        {% endfor %}
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#electronic_main_slider" role="button" data-slide="prev">
+         <i class="fa fa-angle-left"></i>
+         </a>
+         <a class="carousel-control-next" href="#electronic_main_slider" role="button" data-slide="next">
+         <i class="fa fa-angle-right"></i>
+         </a>
+      </div>
+   </div>
+   <!-- electronic section end -->
+   
+{% endblock %}
