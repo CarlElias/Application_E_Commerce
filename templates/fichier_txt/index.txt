@@ -1,6 +1,6 @@
 {% extends  'master.html' %}
 
-{% block Semence %}
+{% block content %}
 {% load static %}
    <!-- electronic section start -->
    <div class="fashion_section">
@@ -21,7 +21,7 @@
                               <div class="electronic_img"><img style="width: 90%;" src={{object.image.url}}></div>
                               <div class="btn_main">
                                  <div class="buy_bt"><a href="#">Ajouter au panier</a></div>
-                                 <div class="seemore_bt"><a href="#">Apercu rapide</a></div>
+                                 <div class="seemore_bt"><a href="{% url 'produit' object.categorie object.slug %}">Apercu</a></div>
                               </div>
                            </div>
                         </div>
