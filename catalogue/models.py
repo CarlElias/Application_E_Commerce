@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from django.contrib.auth.models import User
 
 # Create your models here.
@@ -26,6 +27,19 @@ class Item(models.Model): #Item du catalogue
     image = models.ImageField(default='tt.png', upload_to='')
     def __str__(self):
         return self.titre
+    
+    def get_add_to_cart_url(self):
+        return reverse("ajout-au-panier", kwargs={
+            'categorie': self.categorie,
+            'slug': self.slug
+        })
+        
+    def get_remove_from_cart_url(self):
+        return reverse("supp-du-panier", kwargs={
+            'categorie': self.categorie,
+            'slug': self.slug
+        })
+            
 
 class OrderItem(models.Model): #Item de la commande
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
