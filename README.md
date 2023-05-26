@@ -2,7 +2,7 @@
 
 This a e-commerce web application that allows users to search for products stored in database, add them to shopping cart and then make payment using Stripe. App has login system functionality. The guest user is able to browse, search and add product to cart only. Checkout and payment option is available for registerd users.
 
-<h1>Application toujours en developpement</h1>
+<h1> Application toujours en developpement</h1>
 
 <!--git remote add origin https://github.com/CarlElias/Application_E_Commerce
 git branch -M main
